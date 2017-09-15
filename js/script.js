@@ -88,6 +88,12 @@ var str = "\"" + houseName + ", " + adjName + ", " + jobName + ", " + authName +
 // console.log(conjugation("generate"));
 $("#quote").text(str)
 
+$(document).ready(function(){
+    $("button").click(function(){
+        location.reload(true);
+    });
+});
+
 // ============ THIS COUNTDOWN CODE IS BORROWED FROM W3SCHOOLS =================
 
 // Set the date we're counting down to
