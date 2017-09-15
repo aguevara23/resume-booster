@@ -34,18 +34,18 @@ var family = ["Father", "Mother", "Son", "Daughter", "Uncle", "Auntie"]
 var animals = ["Puppies", "Kittens", "Raccoons", "Armadillos", "Chinchillas", "Salamanders", "Turtles", "Kangaroos", "Ostriches", "Komodo Dragons", "Red Pandas", "Ferrets", "Capybaras", "Bunnies"]
 var generations = ["Millenials", "Baby Boomers", "Generation X'ers", "Centennials" ]
 
-var img = [
-	"./img/business1.jpg",
-	"./img/business2.jpg",
-	"./img/business3.jpg",
-	"./img/business4.jpg",
-	"./img/business5.jpg",
-	"./img/business6.jpg",
-	"./img/business7.jpg",
-	"./img/business8.jpg",
-	"./img/business9.jpg",
-	"./img/business10.jpg",
-]
+// var img = [
+// 	"./img/business1.jpg",
+// 	"./img/business2.jpg",
+// 	"./img/business3.jpg",
+// 	"./img/business4.jpg",
+// 	"./img/business5.jpg",
+// 	"./img/business6.jpg",
+// 	"./img/business7.jpg",
+// 	"./img/business8.jpg",
+// 	"./img/business9.jpg",
+// 	"./img/business10.jpg",
+// ]
 
 function conjugation(str){
 	var x = str.split("").reverse()[0]
@@ -87,13 +87,6 @@ var str = "\"" + houseName + ", " + adjName + ", " + jobName + ", " + authName +
 // console.log(testString.substring(testString.length-3, testString.length));
 // console.log(conjugation("generate"));
 $("#quote").text(str)
-
-$(document).ready(function(){
-    $("button").click(function(){
-        location.reload(true);
-    });
-    $("#background").css("background-image", "url(" + random(img) + ")");
-});
 
 // ============ THIS COUNTDOWN CODE IS BORROWED FROM W3SCHOOLS =================
 
